@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Categories — Clothing Factory</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg rv-navbar">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="index.html">Clothing<span>Factory</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="categories.html">Categories</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="men.html">Men's Fashion</a></li>
+              <li><a class="dropdown-item" href="women.html">Women's Fashion</a></li>
+              <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button class="rv-cart-btn rv-open-cart d-flex align-items-center gap-1" type="button">
+          <i class="bi bi-bag"></i><span>Cart</span><span class="rv-cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="rv-page-header">
+    <div class="container text-center">
+      <h1 class="rv-page-title">Shop by Category</h1>
+      <p class="rv-page-subtitle mt-2">Find exactly what you're looking for</p>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container px-4 px-lg-5">
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">
+          <a href="men.html" class="text-decoration-none">
+            <div class="rv-category-card card border-0 text-center shadow-sm">
+              <div style="overflow:hidden;">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600&q=80" class="card-img-top" alt="Men's Fashion" style="height:260px;object-fit:cover;" />
+              </div>
+              <div class="card-body py-3">
+                <h5 class="mb-1" style="font-family:'Playfair Display',serif;font-weight:600;color:#111;">Men's Fashion</h5>
+                <p class="text-muted small mb-2">Shirts, T-Shirts, Jackets and more</p>
+                <span style="font-size:0.78rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#c8a96e;">Explore →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <a href="women.html" class="text-decoration-none">
+            <div class="rv-category-card card border-0 text-center shadow-sm">
+              <div style="overflow:hidden;">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&q=80" class="card-img-top" alt="Women's Fashion" style="height:260px;object-fit:cover;" />
+              </div>
+              <div class="card-body py-3">
+                <h5 class="mb-1" style="font-family:'Playfair Display',serif;font-weight:600;color:#111;">Women's Fashion</h5>
+                <p class="text-muted small mb-2">Trending dresses, Tops, T-Shirts and more</p>
+                <span style="font-size:0.78rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#c8a96e;">Explore →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <a href="accessories.html" class="text-decoration-none">
+            <div class="rv-category-card card border-0 text-center shadow-sm">
+              <div style="overflow:hidden;">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600&q=80" class="card-img-top" alt="Accessories" style="height:260px;object-fit:cover;" />
+              </div>
+              <div class="card-body py-3">
+                <h5 class="mb-1" style="font-family:'Playfair Display',serif;font-weight:600;color:#111;">Accessories</h5>
+                <p class="text-muted small mb-2">Watches, Bags, Sunglasses and more</p>
+                <span style="font-size:0.78rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#c8a96e;">Explore →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mini banner -->
+  <section class="py-5" style="background:#111;">
+    <div class="container px-4 px-lg-5 text-center">
+      <p class="mb-2" style="color:rgba(255,255,255,0.5);font-size:0.8rem;letter-spacing:3px;text-transform:uppercase;">Special Offer</p>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,4vw,2.2rem);color:#fff;">Up to 30% off Sale Items</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.95rem;" class="mt-2 mb-4">Limited time — don't miss out</p>
+      <a href="index.html#all-products" class="btn-rv-dark" style="text-decoration:none;display:inline-block;padding:0.7rem 2rem;background:#c8a96e;border-color:#c8a96e;color:#111;">Shop Sale</a>
+    </div>
+  </section>
+
+  <footer class="rv-footer">
+    <div class="container px-4 px-lg-5">
+      <div class="row align-items-center gy-3">
+        <div class="col-12 col-md-4 text-center text-md-start">
+          <span style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#fff;">Clothing Factory</span>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <p class="mb-0 small">© 2026 Clothing Factory</p>
+        </div>
+        <div class="col-12 col-md-4 text-center text-md-end">
+          <a href="about.html" class="me-3 small">About</a>
+          <a href="index.html" class="small">Home</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
